@@ -10,16 +10,26 @@ Define the process:
 If a palindrome appears within k iterations, return the number of iterations and the
 palindrome.
 
-PYTHON CODE FOR THE ABOVE PROBLEM STATEMENT:
-a = int(input("enter your value: "))
-limit = int(input("Enter your limit: "))
-for i in range(limit):
-    b = str(a)[::-1]
-    c = int(b)
-    a = a+c
-    print(f"step{i+1} = {a}")
-    if str(a) == str(a)[::-1]:
-        print("palindrome found = ",a)
-        break
+
+ Reverse and Add until Palindrome
+
+This program takes an integer input from the user, reverses its digits, adds it to the original number, and repeats the process until a **palindrome number** is found (or until the given limit is reached).  
+
+
+📌 How It Works
+1. User enters a number (`a`) and a maximum iteration limit (`limit`).
+2. The program reverses the number and adds it to the original.
+3. After each addition, the result is checked:
+   - If the number is a palindrome → process stops.
+   - Otherwise → process repeats until the limit is reached.
+
+
+
+
+
+
+
+
+
         
         
